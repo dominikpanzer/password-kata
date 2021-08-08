@@ -5,7 +5,6 @@ export class Rechner {
   }
   public addiereZurBasis(zahl: number): number {
     debugger;
-    console.log(this);
     return this.basis + zahl;
   }
 }
