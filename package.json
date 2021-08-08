@@ -10,6 +10,11 @@
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run lint" 
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dominikpanzer/neigeknoert.git"
@@ -39,12 +44,5 @@
   },
   "dependencies": {
     "eslint": "^7.32.0"
-  },
-  "husky": {
-  "hooks": {
-    "pre-commit": "npm run prettier-format && npm run lint",  
-    "pre-push": "",    
-    "...": "..."
   }
-}
 }
