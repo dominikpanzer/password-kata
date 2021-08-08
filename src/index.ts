@@ -6,7 +6,6 @@ export class Rechner {
   public addiereZurBasis(zahl: number): number {
     debugger;
     debugger;
-
     return this.basis + zahl;
   }
 }
