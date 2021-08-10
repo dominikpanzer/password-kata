@@ -1,2 +1,1 @@
-# neigeknoert
-Los gehts
+# simple-typescript-starter
