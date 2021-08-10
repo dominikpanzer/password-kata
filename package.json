@@ -4,17 +4,15 @@
   "description": "Neigeknört App",
   "main": "index.js",
   "scripts": {
+    "test:dev": "jest --watchAll",
     "test": "jest",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
     "start:dev": "nodemon",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
   },
   "repository": {
     "type": "git",
@@ -45,6 +43,7 @@
   },
   "dependencies": {
     "eslint": "^7.32.0",
-    "lint-staged": "^11.1.2"
+    "lint-staged": "^11.1.2",
+    "rifraf": "^2.0.3"
   }
 }
