@@ -1,6 +1,4 @@
-/* eslint-disable no-console */
 import { PasswordChecker } from '../PasswordChecker';
-
 test('AKZEPTRANZTEST Passwort ist sicher', () => {
   const passwordChecker = new PasswordChecker();
   expect(passwordChecker.checkPasswordSecurity('Abc12gjkdGD')).toBe('secure');
