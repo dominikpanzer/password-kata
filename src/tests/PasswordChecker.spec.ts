@@ -21,7 +21,6 @@ test('Passwort ist kürzer als 8 Zeichen, Fehler', () => {
 
 test('Passwort enthält mindestens eine Ziffer, kein Fehler', () => {
   const passwortChecker = new PasswordChecker();
-  console.log(passwortChecker.containsNumbers('a1bc'));
   expect(passwortChecker.containsNumbers('a1bc')).toBe(true);
 });
 
