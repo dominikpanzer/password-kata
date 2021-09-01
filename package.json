@@ -1,7 +1,7 @@
 {
-  "name": "neigeknoert",
+  "name": "password validator",
   "version": "1.0.0",
-  "description": "Neigeknört App",
+  "description": "password validator",
   "main": "index.js",
   "scripts": {
     "test:dev": "jest --watchAll",
@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/dominikpanzer/neigeknoert#readme",
   "devDependencies": {
+    "@types/jasmine": "^3.8.2",
     "@types/jest": "^26.0.24",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^16.4.13",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
