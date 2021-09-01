@@ -9,7 +9,8 @@ export class PasswordChecker {
     return /\d/.test(password);
   }
   isLongerThanEightChars(password: string): boolean {
-    return password.length > 8;
+    const MINIMUM_PASSWORD_LENGTH = 8;
+    return password.length > MINIMUM_PASSWORD_LENGTH;
   }
   checkPasswordSecurity(password: string): string {
     let validTestsCounter = 0;
