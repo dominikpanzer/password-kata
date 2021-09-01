@@ -1,14 +1,14 @@
 export class PasswordChecker {
-  containsUpperCaseLetters(password: string): boolean {
+  private containsUpperCaseLetters(password: string): boolean {
     return /[A-Z]/.test(password);
   }
-  containsLowerCaseLetters(password: string): boolean {
+  private containsLowerCaseLetters(password: string): boolean {
     return /[a-z]/.test(password);
   }
-  containsNumbers(password: string): boolean {
+  private containsNumbers(password: string): boolean {
     return /\d/.test(password);
   }
-  isLongerThanEightChars(password: string): boolean {
+  private isLongerThanEightChars(password: string): boolean {
     const MINIMUM_PASSWORD_LENGTH = 8;
     return password.length > MINIMUM_PASSWORD_LENGTH;
   }
